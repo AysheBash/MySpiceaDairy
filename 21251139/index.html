@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <title>MySpicesDiary</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">MySpicesDiary</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto mr-4">
+          
+          <li class="nav-item">
+            <a id="anasayfa"class="nav-link" href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hakkinda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tarihce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">iletisim</a>
+          </li>
+         
+        </ul>
+      </div>
+    </nav>
+  
+   <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/aktar5.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/aktar8.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/aktar12.webp" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+   </header>
+<hr>
+   <button  div="tarih" type="button" onclick="document.getElementById('tarih').innerHTML= Date()">Tarihi Ekrana Yaz</button>
+   <p id="tarih"></p>
+
+
+
+
+   <form>
+    <select id="benimSecimim">
+      <option class="pulbiber">Pul Biber</option>
+      <option>Nane</option>
+      <option>Tarcin</option>
+      <option>Ada Cayi</option>
+      <option>Biberiye</option>
+      <option>kekik</option>
+      <option >Zencefil</option>
+      <option >Zerdeçal</option>
+      <option >Kimyon</option>
+      <option >Karabiber</option>
+      <option >Safran</option>
+      <option >Muskat</option>
+    </select>
+    </form>
+
+    <br><br>
+    <input type="button" onclick="getOption()" value="Click Me!">
+    </form>
+    
+    <p id="demo"></p>
+
+
+   <hr>
+
+
+
+   <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+  <input type="button" onclick="myFunction()" value="Reset">
+</form>
+
+
+
+   <main>
+    <div class="card-group mt-3">
+      <div class="card">
+        <img class="card-img-top" id="pulbiber" src="images/kirmizi pul biber.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="pulbiberyazisi">Kırmızı Pul Biber</h5>
+          <span>
+            <ul class="pulbiberornekler" type="square">
+              <li>Bağışıklık sistemimizi güçlendirerek metabolizmamızın daha düzenli çalışmasını sağlayan bir baharat.</il>
+              <li>Kış mevsiminde kullandığımızda vücut ısısını artırıyor, dışarıdan gelen bakteri ve virüslere karşı bizi direnç olarak kuvvetlendiriyor.</il>
+              <li>pul biberin metabolizmayı hızlandırarak yağ yakımını artırir. Özellikle kilo vermek isteyenler için ideal bir besindir.</il>
+              <li>İltihap sökücü ve enfeksiyon giderici olması nedeniyle artirit ağrılarına iyi gelir.</il>
+              <li>Kırmızı pul biber dolaşım sistemine yardımcı olur, kolesterolü düşürerek kalp hastalıklarını önler, lipit (yağ) birikimini azaltır ve bu nedenle aşırı kan pıhtılaşmasını tersine çevirir.</il>
+            </ul>
+          </span>
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2"target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız </small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/nane.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="naneyazisi">Nane</h5>
+          <span>
+            <ul class="naneornekleri" type="square">
+              <li>Ağızda zararlı bakteri üremesini önleyerek, dil ve dişleri temizleyerek, ağız sağlığını iyileştirir.</li>
+              <li>Doğal bir uyarıcıdır zihinsel sağlığı destekler, yorgunluk, anksiyete ve depresyonu rahatlatır.</li>
+              <li>Hızlı ve etkili bir bulantı kesicidir.</li>
+              <li>Akne semptomlarını rahatlatır.</li>
+              <li>Burun, boğaz ve akciğer tıkanıklıklarını temizler.</li>
+              <li>Nane güçlü bir adaptojenik bitkidir ve baş ağrısını iyileştirmeye yardımcı olur</li>
+              <li>Nane, besinlerin daha iyi emilmesini kolaylaştırmaya yardımcı olan sindirim enzimlerini uyarır. </li>
+              <li>Nane içindeki aktif yağ olan mentol, hazımsızlığı gidermeye yardımcı olur.</li>
+            </ul>
+          </span>
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2"target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/tarcin.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="tarcinyazisi">Tarçın</h5>
+          <span>
+            <ul class="tarcinornekleri" type="square">
+              <li>Tarçın, antioksidan içeriği en yüksek olan baharat türlerinden bir tanesidir.Bu sayede hemen hemen tüm kanser türlerine karşı önemli bir koruma sağla</li>
+              <li>Tarçının, insülin hormonuna duyarlılığı önemli ölçüde artırdığı birçok çalışmada saptanmıştır.</li>
+              <li>Tarçın'ın antimikrobiyal özellikleri virüslere kadar uzanır, bu durum HIV ile savaşmaya veya hastalığı yönetmeye yardımcı olabileceğini gösterir.</li>
+              <li>Tarçın, kan şekerini düşürücü özellikleriyle bilinir. İnsülin direnci üzerindeki olumlu etkilerinin yanı sıra tarçın, kan şekerini başka mekanizmalarla da düşürebilir. </li>
+              <li>Tarçın, bakteriyel ve mantar enfeksiyonlarıyla mücadeleye yardımcı olur</li>
+              <li>Vücuttaki zararlı maddelerin atılımını kolaylaştırarak etkilerini düşürmektedir.</li>
+            </ul>
+            </span>
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2"target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="card-deck mt-3">
+      <div class="card">
+        <img class="card-img-top" id="adacayi" src="images/adacayi.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="adacayiyazisi">Ada Çayi</h5>
+          <span>
+            <ul class="adacayiornekleri" type="square">
+              <li>Depresyonu ve stresi azaltır.</li>
+              <li>Zararlı toksinlerin vücuttan atılmasına yardımcı olur.</li>
+              <li>Beyin fonksiyonlarını geliştirir.</li>
+              <li>Ağız ve diş eti hastalıklarına iyi  gelir.</li>
+              <li>Cilt leke ve hastalıklarında kullanır.</li>
+              <li>Mide ve kolestrol hastaları için rahatlatıcı etkisi vardır.</li>
+              <li>Aşırı terlemeyi azaltır.</li>
+              <li>Ada çayının içeriğinde bulunan C vitamini, bağışıklık sisteminin normal fonksiyonuna katkıda bulunur.</li>
+              <li>Vücutta detoks görevi gördüğü bilinen ada çayı düzenli olarak tüketildiğinde karaciğerdeki toksinlerin temizlenmesine yardımcı olarak vücudun zararlı maddelerden arındırılmasına destek olur.</li>
+            </ul>
+          </span>
+        </div>
+        <div class="card-footer">
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2"target="_blank" class="btn btn-primary"> Hakkında</a>
+          <small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" id="biberiye" src="images/biberiye.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="biberiyeyazisi">Biberiye</h5>
+          <span>
+            <ul class="biberiyeornekleri" type="square">
+              <li>İltihap giderici özelliğiyle sindirimi hızlandırıyor ve kolaylaştırıyor.</li>
+              <li>Kas spazmI ve ağrı giderici özelliğiyle biliniyor.</li>
+              <li> Kalp sağlığını koruyor.</li>
+              <li>Sinir fonksiyonlarının iyileşmesine yardımcı oluyor. Özellikle ataksi, bunama, Alzheimer ve Parkinson gibi hastalıkların önlenmesinde kullanılıyor.</li>
+              <li>Biberiyede bulunan karnosol, rosmarinik, betülinik ve karnosik-asit kansere karşı koruyucudur</li>
+              <li>Suyun vücuttan atılım hızını artırarak, idrar söktürüyor.</li>
+              <li>Kilo verme ile ilgili etkili sonuçlar veriyor.</li>
+              <li>Bağışıklık sistemini güçlendiren biberiye ayrıca eklem rahatsızlıklarına, kalp sağlığına ve kas spazmına karşı faydalıdır. B</li>
+            </ul>
+          </span>
+        </div>
+        <div class="card-footer">
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2"target="_blank" class="btn btn-primary"> Hakkında</a>
+          <small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" id="kekik" src="images/kekik.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="kekikyazisi">Kekik</h5>
+          <span>
+            <ul class="kekikornekleri">
+              <li>Kekik tüketimi kalp ve damar sağlığının korunmasını sağlar.</li>
+              <li>Düzenli kekik tüketen kişiler kanser türlerine karşı vücutlarında kalkan oluştururlar.</li>
+              <li>Kekik tüketimi bağışıklığın güçlenmesine destek verir.</li>
+              <li>Kekik dispraksinin tedavi edilmesi önemli doğal bir ilaçtır.</li>
+              <li>Sindirim ve bağırsak sistemine ilişkin problemler kekik tüketimiyle düzelmektedir.</li>
+              <li>Gözlerin sağlıklı olması için kekik tüketilebilir.</li>
+              <li>Solunum yoluna ilişkin problemler kekikle son bulabilir.</li>
+            </ul>
+          </span>
+        </div>
+        <div class="card-footer">
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2"target="_blank" class="btn btn-primary"> Hakkında</a>
+          <small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="card-deck mt-3">
+      <div class="card">
+        <img class="card-img-top" id="zencefil" src="images/zencefil.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="zencefilyazisi">Zencefil</h5>
+          <span>
+            <ul class="zencefilornekleri" type="square">
+              <li>Zencefil sindirime yardımcı olan ve mide rahatsızlıklarını gideren fitokimyasallar açısından zengindir. </li>
+              <li>Sindirim özellikleri, atıkları ve toksinleri ortadan kaldırarak vücudun doğal temizlik ve detoks sürecini canlandırmaya yardımcı olur.</li>
+              <li>Zencefil mide bulantısını da azaltabilecek kimyasallar içermektedir.</li>
+              <li>Taşıt tutması, sabah bulantısı, kolik, mide rahatsızlığı, ishal, irritabl bağırsak sendromu (IBS), kanser tedavisinin neden olduğu mide bulantısı dahil olmak üzere çeşitli "mide problemlerini" tedavi etmek için yaygın olarak kullanılır. </li>
+              <li>Zencefil, baş dönmesi semptomlarını azaltmaktadır.</li>
+              <li>Yapılan bir araştırma zencefilin osteoartrit (kireçlenme) ve romatizmal şikayetlere iyi geldiğini göstermiştir. Ayrıca adet kramplarının hafiflemesinde de etkilidr.</li>
+              <li>Zencefil, kan dolaşımını düzenleyerek damarlarda yağ birikmesini engeller ve kalp krizi ya da felç riskini azaltır.</li>
+            </ul>
+          </span>
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2" target="_blank"class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" id="zerdecal" src="images/zerdecal.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="zerdecalyazisi">Zerdeçal</h5>
+          <span>
+            <ul class="zerdecalornekleri" type="square">
+              <li>Sivilce, egzama ve sedef hastalığı gibi cillde ilişkin birçok sağlık sorununun iyileştirilmesinde zerdeçal ile hazırlanan doğal karışımlardan yararlanılabilir.</li>
+              <li>Zerdeçal bağışıklık seviyelerini artırır ve destekler, kolesterolü düşürür.</li>
+              <li>İltihabı yatıştırır.</li>
+              <li> Zerdeçal kan akışını hızlandıran ve sindirim sistemini düzenleyen bir baharattır. Onun bu özelliği kilo vermeye yardımcı olur</li>
+              <li>Mide asitliğini düzenler ve mideyi güçlendirir.</li>
+              <li>Diyabet nedeniyle oluşan komplikasyon risklerini engeller. Hafızayı güçlendirir.</li>
+              <li>Karaciğer dostudur. Vücutta biriken zehirli maddelerin atılmasını sağlar. Verem hastalığının tedavisini destekler.</li>
+            </ul>
+          </span>
+          <br><br><br><br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2" target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" id="kimyon" src="images/kimyon.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="kimyonyazisi">Kimyon</h5>
+          <span>
+            <ul class="kimyonornekleri" type="square">
+              <li>Demir deposu olarak bilinen kimyon, çocuklarda büyümeyi destekler. </li>
+              <li>Kandaki yüksek şeker miktarını azaltan kimyon, diyabet tedavisinde etkilidir. </li>
+              <li>Anti-kanserojen ve antioksidan olarak, kolon ve meme kanseri başta olmak üzere çoğu kanser türüne karşı koruyucu özelliği vardır. Tümör oluşumunu durdurarak, tümörün daha geniş alanlara yayılımını engeller.</li>
+              <li>Tıpkı bir balgam söktürücü gibi davranan kimyon, balgamın hapşırma, öksürme ve tükürme yollarıyla dışarı atılmasını sağlar. Astım ve bronşit gibi solunum yolu enfeksiyonlarının doğal tedavisidir.</li>
+              <li>Kötü kolesterolle savaşır ve kalp ve damar sağlığına da iyi gelir. Damar tıkanıklığı, kalp krizi ve inme riskini önemli ölçüde azaltır. </li>
+              <li>Sivilcelere, cilt kızarıklıklarına ve lekelere, cilt tahrişlerine ve güneş yanıklarına iyi gelir. Cildi canlandırır.</li>
+            </ul>
+          </span>
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2" target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="card-deck mt-3">
+      <div class="card">
+        <img class="card-img-top" id="karabiber" src="images/karabiber.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="karabiberyazisi">Karabiber</h5>
+          <span>
+            <ul class="karabiberornekleri" type="square">
+              <li>C vitamini yüklü olan karabiber antibiyotik etkisine sahiptir. Hastalıklara karşı kalkan görevi görür.</li>
+              <li>Vitamin ve mineral açısından zengin olan karabiber enerji verir</li>
+              <li>Göz sağlığı için en faydalı vitaminlerden biri A vitaminidir. Karabiberin içeriğinde de bolca A vitamini bulunduğu için göz sağlığına ve göz alerjilerine iyi gelir.</li>
+              <li>Karabiber tüketimi kış aylarında virüslere karşı dayanıksız olan direnci yükseltir. Soğuk algınlığı, nezle, grip gibi kış hastalıklarının daha hafif geçirilmesinde yardımcı olur.</li>
+              <li>Kansere karşı koruma sağlar.</li>
+              <li>Cildin sağlıklı bir görünüme kavuşmasına yardımcı olur.</li>
+              <li>Metabolizmayı sağlıklı çalıştırır.</li>
+              <li>Saçta kepeklenme sorununa iyi gelir.</li>
+              <li>Stresi önler.</li>
+            </ul>
+          </span>
+          <br><br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2"  target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" id="safran" src="images/safran.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="safranyazisi">Safran</h5>
+          <span>
+            <ul class="safranornekleri" type="square">
+              <li> Potasyum bakımından zengin olan safran kan basıncını sağlıklı seviyelerde tutmaya yardımcı olur.</li>
+              <li>Antioksidan özelliği nedeniyle solunum rahatsızlıklarına iyi gelir.</li>
+              <li> Depresyon, kaygı, hafıza kaybı ve nörolojik hastalıklara karşı koruma sağlar.</li>
+              <li> C vitamini, magnezyum, demir, potasyum yönünden zengin olan safran aynı zamanda kan şekeri seviyesini düzenler.</li>
+              <li>Analjezik özelliklere sahip olan safran tümörlerin büyümesini azaltır.</li>
+              <li>Yaşa bağlı görme kalitesi düşen bireylerde görme keskinliğini arttır ve katarakt oluşumunu önler.</li>
+              <li> Bronşiyal astım belirtileri ile iltihabı da hafifletir.</li>
+            </ul>
+          </span>
+          <br><br><br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2" target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" id="muskat" src="images/muskat.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="muskatyazisi">Muskat</h5>
+          <span>
+            <ul class="muskatornekleri" type="square">
+              <li>İştah açıcı etkisi vardır. Zayıf olan ve iştah problemi yaşayan kişilerin kilo almak için kullanabileceği bir baharattır.</li>
+              <li>Antiseptik özelliği sayesinde bağışıklık sisteminin güçlenmesine yardımcı olur.</li>
+              <li>Ağız kokusuna çözüm sağlar. Diş eti rahatsızlıklarının tedavisine yardımcı olacağından diş macununa ekleyerek kullanılabilir.</li>
+              <li>Sindirim problemlerinin giderilmesine yardımcı olur.</li>
+              <li>Antioksidan özelliği sayesinde böbrek ve karaciğerin temizlenmesini sağlayarak bu organların işlevini artırır.</li>
+              <li>Stresten dolayı uykusuzluk ve baş ağrısı problemi olanlar için faydalıdır.</li>
+              <li>Kan hücrelerini artırır ve demir eksikliği tedavisine yardımcı olur.</li>
+            </ul>
+            
+          </span>
+          <br><br><br><br>
+          <a href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri/2 " target="_blank" class="btn btn-primary"> Hakkında</a>
+          <p class="card-text"><small class="text-muted">Daha Fazla Bilgi İçin Tıklayınız</small></p>
+        </div>
+      </div>
+    </div>
+   </main>
+    <br><br><br>
+
+  <h1>Baharatların İle Alakalı Vıdeolar</h1>
+  <hr"><hr>
+  
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/G3zn7bERy7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/V2Y51Et6rkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <p><a id="site" href="https://www.lezzet.com.tr/lezzetten-haberler/baharat-cesitleri-isimleri-ve-ozellikleri">Lezzet</a></p>
+
+   <p>Click the button to display the value of the href attribute of the link above.</p>
+   
+   <button onclick="myFunction()">Try it</button>
+   
+   <p id="demo"></p>
+   
+
+   <footer class="bg-dark text-white p-3 text-center mt-2">@powered by Boolstrap</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
